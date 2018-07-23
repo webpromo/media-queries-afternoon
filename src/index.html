@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="sect1">
+        <nav>
+            <div class="Name">Start Bootstrap
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">SERVICES</a>
+                    <a href="#">PORTFOLIO</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">TEAM</a>
+                    <a href="#">CONTACT</a>
+                </div> 
+            </div>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">MENU</button>
+            </div>
+
+        </nav>
+
+
+
+
+    </section>>
+</body>
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>
